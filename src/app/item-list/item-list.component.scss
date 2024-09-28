@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 16px ;
+  box-sizing: border-box;
+}
+
+.item-list{
+  background-color: #C1D37F;
+  max-width: 540px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+}
+table{
+  max-width: 480px;
+  padding: 10px;
+}
+.inner-container{
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+h2{
+  text-align: center;
+  font-size: 24px;
+}

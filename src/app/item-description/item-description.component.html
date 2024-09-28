@@ -1,0 +1,7 @@
+<div *ngIf="item" class="Item-Details">
+  <h2>Product Details:</h2>
+  <p><strong>NAME:</strong> {{item.productName}}</p>
+  <p><strong>DESCRIPTION:</strong> {{item.productDescription}}</p>
+  <p><strong>PRICE:</strong> {{item.price}}</p>
+  <p><strong>ADDED TO CART:</strong>{{item.InCart? 'Yes': 'No' }}</p>
+</div>
