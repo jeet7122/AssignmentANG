@@ -11,6 +11,7 @@
   padding: 10px;
   margin: 20px;
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 table{
   max-width: 480px;
@@ -21,8 +22,23 @@ table{
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
+
 }
 h2{
   text-align: center;
   font-size: 24px;
+  color: white;
 }
+p{
+  font-family: "Sans Serif Collection";
+  color: darkslateblue;
+
+}
+.even-item{
+  background-color: lightpink;
+
+}
+.odd-item{
+  background-color: seagreen;
+}
+

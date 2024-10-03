@@ -1,10 +1,10 @@
-<div class="item-list">
-    <h2>Menu Cart</h2>
-      <div *ngFor="let item of MenuItems" (click)="selectItem(item)" class="inner-container">
-        <p>{{item.productName}}</p>
-        <p>{{item.price}}</p>
-      </div>
-  <app-item-description [item] ="selectedItem">
-
-  </app-item-description>
-</div>
+  <div class="item-list">
+      <h2>Menu Cart</h2>
+        <div *ngFor="let item of MenuItems, let i = index"  (click)="selectItem(item)" class="inner-container"
+        [ngClass]="{'even-item': i % 2 === 0, 'odd-item': i % 2 !== 0}">
+          <p>{{item.productName}}</p>
+          <p>{{item.price}}</p>
+        </div>
+    <app-item-description [item] ="selectedItem">
+    </app-item-description>
+  </div>

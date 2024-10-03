@@ -3,5 +3,8 @@
   <p><strong>NAME:</strong> {{item.productName}}</p>
   <p><strong>DESCRIPTION:</strong> {{item.productDescription}}</p>
   <p><strong>PRICE:</strong> {{item.price}}</p>
-  <p><strong>ADDED TO CART:</strong>{{item.InCart? 'Yes': 'No' }}</p>
+  <p><strong>ADDED TO CART:</strong>  {{item.InCart? 'Yes': 'No' }}</p>
+  <button (click)="toggleCart(item)" class="toggle-button">
+    ADDED TO CART
+  </button>
 </div>

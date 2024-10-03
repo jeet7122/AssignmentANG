@@ -13,4 +13,8 @@ import {NgIf} from "@angular/common";
 })
 export class ItemDescriptionComponent {
   @Input() item?:Items;
+  toggleCart(item: Items){
+    item.InCart = !item.InCart;
+  }
+
 }

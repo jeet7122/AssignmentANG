@@ -1,8 +1,13 @@
 .main-container{
+  position: absolute;
+  left: 5%;
+  top: 10%;
   display: flex;
-  width: 100vw;
+  width: 90vw;
   height: 70vh;
   justify-content: center;
   align-items: center;
-  background-color: rgba(218, 112, 214, 0.68);
+  background-color: skyblue;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }

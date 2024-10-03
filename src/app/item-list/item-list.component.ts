@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Items} from "../models/items";
-import {NgForOf} from "@angular/common";
+import {NgClass, NgForOf} from "@angular/common";
 import {ItemDescriptionComponent} from "../item-description/item-description.component";
 
 @Component({
@@ -8,7 +8,8 @@ import {ItemDescriptionComponent} from "../item-description/item-description.com
   standalone: true,
   imports: [
     NgForOf,
-    ItemDescriptionComponent
+    ItemDescriptionComponent,
+    NgClass
   ],
   templateUrl: './item-list.component.html',
   styleUrl: './item-list.component.scss'
@@ -25,6 +26,7 @@ export class ItemListComponent {
   selectItem(item : Items): void{
     this.selectedItem = item;
   }
+
 
 
 }
